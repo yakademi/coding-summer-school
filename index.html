@@ -4,11 +4,319 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Coding Summer School</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <h1>Welcome to the coding summer school</h1>
+    <!-- Begining of the header -->
+    <header>
+        <!-- Begining og the navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between">
+            <a class="navbar-brand mr-auto d-block" href="#">
+                <img id="logo-nav" src="images/yakdev-logo.png" class="rounded-circle">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#
+                aria-controls=" navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="btn btn-success text-white" href="#make-website">Make a website<span
+                                  class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary text-white ml-1" href="#create-game">Create a game</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-warning text-white ml-1" href="#">Upload to the cloud</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+        <!-- End of the navigation -->
+    </header>
+    <!-- End of the header -->
+    <!-- Begining of the section carousel -->
+    <section id="carousel">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+                <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <!-- begining of a slide -->
+                <div class="carousel-item active" id="slide-1">
+                    <div class="carousel-item-content d-flex justify-content-center align-content-center">
+                        <div class="jumbotron">
+                            <h1 class="display-4">Discover how to create a website</h1>
+                            <p class="lead">You will be able to see the code that is hidden behind a website and
+                                understand all the secret.</p>
+                            <hr class="my-4">
+                            <p>Learn and discover by practicing and create your own website.</p>
+                            <a class="btn btn-success btn-lg" href="#make-website" role="button">Let's go</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ending of a slide -->
+                <!-- begining of a slide -->
+                <div class="carousel-item" id="slide-2">
+                    <div class="carousel-item-content d-flex justify-content-center">
+                        <div class="jumbotron">
+                            <h1 class="display-4">Create a game and have fun</h1>
+                            <p class="lead">You can create your own game !!! Really !!!</p>
+                            <hr class="my-4">
+                            <p>Discover the language javascript, and try to customize the game</p>
+                            <a class="btn btn-primary btn-lg" href="#create-game" role="button">Let's go</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ending of a slide -->
+                <!-- begining of a slide -->
+                <div class="carousel-item" id="slide-3">
+                    <div class="carousel-item-content d-flex justify-content-center">
+                        <div class="carousel-item-content d-flex justify-content-center">
+                            <div class="jumbotron">
+                                <h1 class="display-4">Upload your website in the cloud</h1>
+                                <p class="lead">Now that you have your website you can put it on the cloud</p>
+                                <hr class="my-4">
+                                <p>Follow the steps and then proudly show off!</p>
+                                <a class="btn btn-warning text-white btn-lg" href="#upload" role="button">Let's go</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ending of a slide -->
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <!-- End of section carousel -->
+
+    <!-- ################################################################## -->
+
+    <!-- Begining of section requirement -->
+    <section id="requirement" class="p-3">
+        <div class="container">
+            <!-- Heading requirement -->
+            <h1 class="my-5 text-center">
+                Before starting let's see the <span class="badge badge-secondary">Requirement</span>
+            </h1>
+            <!-- Begining of the row -->
+            <div class="row">
+                <!-- begining of the column -->
+                <div class="col-md">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/DjPGoGmO5VY" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                </div>
+                <!-- end of the column -->
+                <!-- begining of the column -->
+                <div class="col-md">
+                    <h2 class="text-center">Download and install your text editor</h2>
+                    <p>To make a great job you need a great tool. As most of the professional developers, we are going
+                        to use <a href="https://code.visualstudio.com/download" target="_blank">vscode</a>. This text
+                        editor is full with handy tool to make programing very easy.</p>
+                    <p class="text-center">
+                        <a class="btn btn-primary" href="https://code.visualstudio.com/download"
+                           target="_blank">Download
+                            Here</a>
+                    </p>
+                    <p>Once it's done, you can open <strong>vscode</strong>. Inside vscode press the keys <span
+                              class="badge badge-secondary">ctrl + p</span> and paste this <span
+                              class="badge badge-secondary">ext
+                            install ritwickdey.LiveServer</span> then press <span
+                              class="badge badge-secondary">ENTER</span>
+                    </p>
+
+
+                </div>
+                <!-- end of the column -->
+            </div>
+            <!-- end of the row -->
+        </div>
+    </section>
+    <!-- End of section requirement -->
+
+    <!-- ################################################################## -->
+
+    <!-- Begining of section make a website -->
+    <section id="make-website" class="p-3">
+        <!-- Begining of the container -->
+        <div class="container">
+            <h1 class="text-center alert alert-success">Make your first website</h1>
+            <!-- Begning of the card -->
+            <div class="card mb-3">
+                <div class="card-body">
+                    <!-- Begining of the row -->
+                    <div class="row">
+                        <!-- begining of the column -->
+                        <div class="col-md">
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/DjPGoGmO5VY"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                        </div>
+                        <!-- end of the column -->
+                        <!-- begining of the column -->
+                        <div class="col-md">
+                            <h2 class="text-center">Exercice for beginers</h2>
+                            <p>In this first exercice we will download a template of a blank website and we will learn
+                                how to
+                                understand the code and modify it so we can create or own website.</p>
+                            <p class="text-center">
+                                <a class="btn btn-primary" href="" target="_blank">Download the files</a>
+                            </p>
+                            <p>You want to learn more about <strong>HTML</strong> ? Just click <a
+                                   class="btn btn-secondary" target="_blank"
+                                   href="https://developer.mozilla.org/en-US/docs/Web/HTML">here</a> to discover all the
+                                tags that you can use and improve your website.</p>
+                            <p>You want to learn more about <strong>CSS</strong> ? Just click <a
+                                   class="btn btn-secondary" target="_blank"
+                                   href="https://developer.mozilla.org/en-US/docs/Web/CSS">here</a> to discover how to
+                                make you website even more outstanding. </p>
+                        </div>
+                        <!-- end of the column -->
+                    </div>
+                    <!-- End of the row -->
+                </div>
+            </div>
+            <!-- End of the card -->
+            <!-- Begning of the card -->
+            <div class="card">
+                <div class="card-body">
+                    <!-- Begining of the row -->
+                    <div class="row">
+                        <!-- begining of the column -->
+                        <div class="col-md">
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/DjPGoGmO5VY"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                        </div>
+                        <!-- end of the column -->
+                        <!-- begining of the column -->
+                        <div class="col-md">
+                            <h2 class="text-center">Exercice for advanced</h2>
+                            <p>So now you are advance... Ok that means that we will be creating together a website
+                                without the
+                                template. Yeah you heard me! This is called create from scratch!</p>
+                            <p class="text-center">
+                                <a class="btn btn-primary" href="" target="_blank">Download the files</a>
+                            </p>
+
+                        </div>
+                        <!-- end of the column -->
+                    </div>
+                    <!-- End of the row -->
+                </div>
+            </div>
+            <!-- End of the card -->
+        </div>
+        <!-- End of the container -->
+    </section>
+    <!-- End of section make a website -->
+
+    <!-- ################################################################## -->
+
+    <!-- Begining of section create game -->
+    <section id="create-game" class="p-3">
+        <!-- Begining of the container -->
+        <div class="container">
+            <h1 class="text-center alert alert-primary">Create a Game</h1>
+            <!-- Begning of the card -->
+            <div class="card mb-3">
+                <div class="card-body">
+                    <!-- Begining of the row -->
+                    <div class="row">
+                        <!-- begining of the column -->
+                        <div class="col-md">
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/DjPGoGmO5VY"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                        </div>
+                        <!-- end of the column -->
+                        <!-- begining of the column -->
+                        <div class="col-md">
+                            <h2 class="text-center">Exercice</h2>
+                            <p>In this exercice we will discover javascript, a programming language. Today we can do
+                                everything with javascript even games. We will see together how to understant the code
+                                and how to modify it to make you own unique game.</p>
+                            <p class="text-center">
+                                <a class="btn btn-primary" href="" target="_blank">Download the files</a>
+                            </p>
+                        </div>
+                        <!-- end of the column -->
+                    </div>
+                    <!-- End of the row -->
+                </div>
+            </div>
+            <!-- End of the card -->
+        </div>
+        <!-- End of the container -->
+    </section>
+    <!-- End of section create game-->
+
+    <!-- ################################################################## -->
+
+    <!-- Begining of section create game -->
+    <section id="upload" class="p-3">
+        <!-- Begining of the container -->
+        <div class="container">
+            <h1 class="text-center alert alert-warning">Upload your website</h1>
+            <!-- Begning of the card -->
+            <div class="card mb-3">
+                <div class="card-body">
+                    <!-- Begining of the row -->
+                    <div class="row">
+                        <!-- begining of the column -->
+                        <div class="col-md">
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/DjPGoGmO5VY"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                        </div>
+                        <!-- end of the column -->
+                        <!-- begining of the column -->
+                        <div class="col-md">
+                            <h2 class="text-center">Exercice</h2>
+                            <p>Now that you have created your website and/or your game, you can upload it on the cloud
+                                to make sure everybody can sees it so you can start showing off.</p>
+
+                        </div>
+                        <!-- end of the column -->
+                    </div>
+                    <!-- End of the row -->
+                </div>
+            </div>
+            <!-- End of the card -->
+        </div>
+        <!-- End of the container -->
+    </section>
+    <!-- End of section upload-->
+
+    <!-- ################################################################## -->
+
+    <!-- Begining of the footer -->
+    <footer class="bg-dark text-center p-5 text-white">
+        &copy; Yakademi
+    </footer>
+    <!-- End of the footer -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>

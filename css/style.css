@@ -1,0 +1,59 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#navbarToggler {
+    flex-grow: 0;
+}
+
+.navbar.bg-light {
+    background-color: #3a3a3a !important;
+}
+
+#logo-nav {
+    height: 75px;
+}
+
+.carousel-inner {
+    height: 80vh;
+}
+
+.carousel-item {
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.carousel-item-content {
+    height: 100%;
+    align-items: center;
+}
+
+#slide-1 {
+    background-image: url("../images/banner-1.jpg");
+}
+
+#slide-2 {
+    background-image: url("../images/banner-2.jpg");
+}
+
+#slide-3 {
+    background-image: url("../images/banner-3.jpg");
+}
+
+.jumbotron {
+    background-color: #1f1f1fc4;
+    color: white;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-color: #505050;
+    border-radius: 50%;
+}
+
+#requirement,
+#create-game {
+    background-color: #e7e7e7;
+}
