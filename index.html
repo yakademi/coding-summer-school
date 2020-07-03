@@ -1,319 +1,223 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coding Summer School</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          type="text/css">
+    <link rel="stylesheet" href="css/theme.css" type="text/css">
 </head>
 
 <body>
-    <!-- Begining of the header -->
-    <header>
-        <!-- Begining og the navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between">
-            <a class="navbar-brand mr-auto d-block" href="#">
-                <img id="logo-nav" src="images/yakdev-logo.png" class="rounded-circle">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#
-                aria-controls=" navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container"> <button class="navbar-toggler navbar-toggler-right border-0 p-0" type="button"
+                    data-toggle="collapse" data-target="#navbar8">
+                <p class="navbar-brand text-primary mb-0">
+                    <i class="fa d-inline fa-lg fa-stop-circle"></i> BRAND </p>
             </button>
-            <div class="collapse navbar-collapse" id="navbarToggler">
-                <ul class="navbar-nav mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <a class="btn btn-success text-white" href="#make-website">Make a website<span
-                                  class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-primary text-white ml-1" href="#create-game">Create a game</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-warning text-white ml-1" href="#">Upload to the cloud</a>
-                    </li>
+            <div class="collapse navbar-collapse" id="navbar8">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"> <a class="nav-link" href="#">Home</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#">Pricing</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#">About</a> </li>
                 </ul>
-
+                <p class="text-primary d-none d-md-block lead mb-0"> <i class="fa d-inline fa-lg fa-stop-circle"></i>
+                    <b> BRAND</b> </p>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-1"> <a class="nav-link" href="#">
+                            <i class="fa fa-github fa-fw fa-lg"></i>
+                        </a> </li>
+                    <li class="nav-item mx-1"> <a class="nav-link" href="#">
+                            <i class="fa fa-gitlab fa-fw fa-lg"></i>
+                        </a> </li>
+                    <li class="nav-item mx-1"> <a class="nav-link" href="#">
+                            <i class="fa fa-bitbucket fa-fw fa-lg"></i>
+                        </a> </li>
+                </ul>
             </div>
-        </nav>
-        <!-- End of the navigation -->
-    </header>
-    <!-- End of the header -->
-    <!-- Begining of the section carousel -->
-    <section id="carousel">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleControls" data-slide-to="1"></li>
-                <li data-target="#carouselExampleControls" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <!-- begining of a slide -->
-                <div class="carousel-item active" id="slide-1">
-                    <div class="carousel-item-content d-flex justify-content-center align-content-center">
-                        <div class="jumbotron">
-                            <h1 class="display-4">Discover how to create a website</h1>
-                            <p class="lead">You will be able to see the code that is hidden behind a website and
-                                understand all the secret.</p>
-                            <hr class="my-4">
-                            <p>Learn and discover by practicing and create your own website.</p>
-                            <a class="btn btn-success btn-lg" href="#make-website" role="button">Let's go</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Ending of a slide -->
-                <!-- begining of a slide -->
-                <div class="carousel-item" id="slide-2">
-                    <div class="carousel-item-content d-flex justify-content-center">
-                        <div class="jumbotron">
-                            <h1 class="display-4">Create a game and have fun</h1>
-                            <p class="lead">You can create your own game !!! Really !!!</p>
-                            <hr class="my-4">
-                            <p>Discover the language javascript, and try to customize the game</p>
-                            <a class="btn btn-primary btn-lg" href="#create-game" role="button">Let's go</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Ending of a slide -->
-                <!-- begining of a slide -->
-                <div class="carousel-item" id="slide-3">
-                    <div class="carousel-item-content d-flex justify-content-center">
-                        <div class="carousel-item-content d-flex justify-content-center">
-                            <div class="jumbotron">
-                                <h1 class="display-4">Upload your website in the cloud</h1>
-                                <p class="lead">Now that you have your website you can put it on the cloud</p>
-                                <hr class="my-4">
-                                <p>Follow the steps and then proudly show off!</p>
-                                <a class="btn btn-warning text-white btn-lg" href="#upload" role="button">Let's go</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Ending of a slide -->
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
         </div>
-    </section>
-    <!-- End of section carousel -->
-
-    <!-- ################################################################## -->
-
-    <!-- Begining of section requirement -->
-    <section id="requirement" class="p-3">
+    </nav>
+    <div class="py-5 text-white"
+         style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(https://static.pingendo.com/cover-bubble-dark.svg);  background-position: center center, center center;  background-size: cover, cover;  background-repeat: repeat, repeat;">
         <div class="container">
-            <!-- Heading requirement -->
-            <h1 class="my-5 text-center">
-                Before starting let's see the <span class="badge badge-secondary">Requirement</span>
-            </h1>
-            <!-- Begining of the row -->
             <div class="row">
-                <!-- begining of the column -->
-                <div class="col-md">
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/DjPGoGmO5VY" frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+                <div class="col-lg-5 p-0">
+                    <div class="embed-responsive embed-responsive-4by3"> <video
+                               src="https://static.pingendo.com/video-placeholder.mp4" class="embed-responsive-item"
+                               type="video/mp4" controls="controls"> Your browser does not support HTML5 video. </video>
+                    </div>
                 </div>
-                <!-- end of the column -->
-                <!-- begining of the column -->
-                <div class="col-md">
-                    <h2 class="text-center">Download and install your text editor</h2>
-                    <p>To make a great job you need a great tool. As most of the professional developers, we are going
-                        to use <a href="https://code.visualstudio.com/download" target="_blank">vscode</a>. This text
-                        editor is full with handy tool to make programing very easy.</p>
-                    <p class="text-center">
-                        <a class="btn btn-primary" href="https://code.visualstudio.com/download"
-                           target="_blank">Download
-                            Here</a>
+                <div class="p-5 col-lg-7 d-flex flex-column justify-content-center">
+                    <h3 class="display-4 mb-3">The lovely valley</h3>
+                    <p class="lead mb-0">Teems with vapour around me, and the meridian sun strikes the upper surface of
+                        the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary,
+                        I throw myself down among the tall grass by the trickling stream; and, as I lie close to the
+                        earth.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1>A wonderful serenity</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 p-3">
+                    <p>When I hear the buzz of the little world among the stalks, and grow familiar with the countless
+                        indescribable forms of the insects and flies, then I feel the presence of the Almighty, who
+                        formed us in his own image, and the breath of that universal love which bears and sustains us.
                     </p>
-                    <p>Once it's done, you can open <strong>vscode</strong>. Inside vscode press the keys <span
-                              class="badge badge-secondary">ctrl + p</span> and paste this <span
-                              class="badge badge-secondary">ext
-                            install ritwickdey.LiveServer</span> then press <span
-                              class="badge badge-secondary">ENTER</span>
-                    </p>
-
-
                 </div>
-                <!-- end of the column -->
+                <div class="col-md-6 p-3">
+                    <p>And then, my friend, when darkness overspreads my eyes, and heaven and earth seem to dwell in my
+                        soul and absorb its power, like the form of a beloved mistress, then I often think with longing,
+                        Oh, would I could describe these conceptions, could impress upon paper all that is living so
+                        full.</p>
+                </div>
             </div>
-            <!-- end of the row -->
         </div>
-    </section>
-    <!-- End of section requirement -->
-
-    <!-- ################################################################## -->
-
-    <!-- Begining of section make a website -->
-    <section id="make-website" class="p-3">
-        <!-- Begining of the container -->
+    </div>
+    <div class="">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6 col-md-3 p-0"> <img class="img-fluid d-block" src="images/cover-moon.svg"> </div>
+                <div class="col-6 col-md-3 p-0"> <img class="img-fluid d-block" src="images/cover-bubble-dark.svg">
+                </div>
+                <div class="col-6 col-md-3 p-0"> <img class="img-fluid d-block" src="images/cover-moon.svg"> </div>
+                <div class="col-6 col-md-3 p-0"> <img class="img-fluid d-block" src="images/cover-bubble-light.svg">
+                </div>
+                <div class="col-6 col-md-3 p-0"> <img class="img-fluid d-block" src="images/cover-bubble-dark.svg">
+                </div>
+                <div class="col-6 col-md-3 p-0"> <img class="img-fluid d-block" src="images/cover-moon.svg"> </div>
+                <div class="col-6 col-md-3 p-0"> <img class="img-fluid d-block" src="images/cover-bubble-light.svg">
+                </div>
+                <div class="col-6 col-md-3 p-0"> <img class="img-fluid d-block" src="images/cover-moon.svg"> </div>
+            </div>
+        </div>
+    </div>
+    <div class="py-5">
         <div class="container">
-            <h1 class="text-center alert alert-success">Make your first website</h1>
-            <!-- Begning of the card -->
-            <div class="card mb-3">
-                <div class="card-body">
-                    <!-- Begining of the row -->
-                    <div class="row">
-                        <!-- begining of the column -->
-                        <div class="col-md">
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/DjPGoGmO5VY"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-                        </div>
-                        <!-- end of the column -->
-                        <!-- begining of the column -->
-                        <div class="col-md">
-                            <h2 class="text-center">Exercice for beginers</h2>
-                            <p>In this first exercice we will download a template of a blank website and we will learn
-                                how to
-                                understand the code and modify it so we can create or own website.</p>
-                            <p class="text-center">
-                                <a class="btn btn-primary" href="" target="_blank">Download the files</a>
-                            </p>
-                            <p>You want to learn more about <strong>HTML</strong> ? Just click <a
-                                   class="btn btn-secondary" target="_blank"
-                                   href="https://developer.mozilla.org/en-US/docs/Web/HTML">here</a> to discover all the
-                                tags that you can use and improve your website.</p>
-                            <p>You want to learn more about <strong>CSS</strong> ? Just click <a
-                                   class="btn btn-secondary" target="_blank"
-                                   href="https://developer.mozilla.org/en-US/docs/Web/CSS">here</a> to discover how to
-                                make you website even more outstanding. </p>
-                        </div>
-                        <!-- end of the column -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="carousel slide" data-ride="carousel" id="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"> <img class="d-block img-fluid w-100"
+                                     src="https://static.pingendo.com/cover-bubble-dark.svg">
+                                <div class="carousel-caption">
+                                    <h5 class="m-0">Carousel</h5>
+                                    <p>with controls</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item"> <img class="d-block img-fluid w-100"
+                                     src="https://static.pingendo.com/cover-bubble-light.svg">
+                                <div class="carousel-caption">
+                                    <h5 class="m-0">Carousel</h5>
+                                    <p>with controls</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item"> <img class="d-block img-fluid w-100"
+                                     src="https://static.pingendo.com/cover-moon.svg">
+                                <div class="carousel-caption">
+                                    <h5 class="m-0">Carousel</h5>
+                                    <p>with controls</p>
+                                </div>
+                            </div>
+                        </div> <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev"> <span
+                                  class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span> </a>
+                        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next"> <span
+                                  class="carousel-control-next-icon"></span> <span class="sr-only">Next</span> </a>
                     </div>
-                    <!-- End of the row -->
                 </div>
             </div>
-            <!-- End of the card -->
-            <!-- Begning of the card -->
-            <div class="card">
-                <div class="card-body">
-                    <!-- Begining of the row -->
-                    <div class="row">
-                        <!-- begining of the column -->
-                        <div class="col-md">
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/DjPGoGmO5VY"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-                        </div>
-                        <!-- end of the column -->
-                        <!-- begining of the column -->
-                        <div class="col-md">
-                            <h2 class="text-center">Exercice for advanced</h2>
-                            <p>So now you are advance... Ok that means that we will be creating together a website
-                                without the
-                                template. Yeah you heard me! This is called create from scratch!</p>
-                            <p class="text-center">
-                                <a class="btn btn-primary" href="" target="_blank">Download the files</a>
-                            </p>
-
-                        </div>
-                        <!-- end of the column -->
-                    </div>
-                    <!-- End of the row -->
-                </div>
-            </div>
-            <!-- End of the card -->
         </div>
-        <!-- End of the container -->
-    </section>
-    <!-- End of section make a website -->
-
-    <!-- ################################################################## -->
-
-    <!-- Begining of section create game -->
-    <section id="create-game" class="p-3">
-        <!-- Begining of the container -->
+    </div>
+    <div class="py-5 text-center">
         <div class="container">
-            <h1 class="text-center alert alert-primary">Create a Game</h1>
-            <!-- Begning of the card -->
-            <div class="card mb-3">
-                <div class="card-body">
-                    <!-- Begining of the row -->
-                    <div class="row">
-                        <!-- begining of the column -->
-                        <div class="col-md">
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/DjPGoGmO5VY"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-                        </div>
-                        <!-- end of the column -->
-                        <!-- begining of the column -->
-                        <div class="col-md">
-                            <h2 class="text-center">Exercice</h2>
-                            <p>In this exercice we will discover javascript, a programming language. Today we can do
-                                everything with javascript even games. We will see together how to understant the code
-                                and how to modify it to make you own unique game.</p>
-                            <p class="text-center">
-                                <a class="btn btn-primary" href="" target="_blank">Download the files</a>
-                            </p>
-                        </div>
-                        <!-- end of the column -->
-                    </div>
-                    <!-- End of the row -->
+            <div class="row">
+                <div class="mx-auto col-md-12">
+                    <h1 class="mb-3">Meet&nbsp;the team</h1>
                 </div>
             </div>
-            <!-- End of the card -->
+            <div class="row">
+                <div class="col-lg-3 col-6 p-4"> <img class="img-fluid d-block mb-3 mx-auto rounded-circle"
+                         src="images/img-placeholder-1.svg" width="100" alt="Card image cap">
+                    <h4> <b>Johann</b> </h4>
+                    <p>CEO and founder</p>
+                    <p class="mb-0"> <i>"I throw myself down among the tall grass by the trickling"</i> </p>
+                </div>
+                <div class="col-lg-3 col-6 p-4"> <img class="img-fluid d-block mb-3 mx-auto rounded-circle"
+                         src="images/img-placeholder-2.svg" width="100" alt="Card image cap">
+                    <h4> <b>Gregory</b> </h4>
+                    <p>Co-founder</p>
+                    <p class="mb-0"> <i>"As I lie close to the earth, a thousand unknown plants"</i> </p>
+                </div>
+                <div class="col-lg-3 col-6 p-4"> <img class="img-fluid d-block mb-3 mx-auto rounded-circle"
+                         src="images/img-placeholder-3.svg" width="100">
+                    <h4> <b>James</b> </h4>
+                    <p>CFO</p>
+                    <p class="mb-0"> <i>"Then, my friend, when darkness overspreads my eyes"</i> </p>
+                </div>
+                <div class="col-lg-3 col-6 p-4"> <img class="img-fluid d-block mb-3 mx-auto rounded-circle"
+                         src="images/img-placeholder-4.svg" width="100">
+                    <h4> <b>Amadeus</b> </h4>
+                    <p>CTO</p>
+                    <p class="mb-0"> <i>"Heaven and earth seem to dwell in my soul"</i> </p>
+                </div>
+            </div>
         </div>
-        <!-- End of the container -->
-    </section>
-    <!-- End of section create game-->
-
-    <!-- ################################################################## -->
-
-    <!-- Begining of section create game -->
-    <section id="upload" class="p-3">
-        <!-- Begining of the container -->
+    </div>
+    <div class="py-5 text-center"
+         style="background-image: url(images/cover-bubble-dark.svg); background-position: right bottom;  background-size: cover; background-repeat: repeat; background-attachment: fixed;">
         <div class="container">
-            <h1 class="text-center alert alert-warning">Upload your website</h1>
-            <!-- Begning of the card -->
-            <div class="card mb-3">
-                <div class="card-body">
-                    <!-- Begining of the row -->
-                    <div class="row">
-                        <!-- begining of the column -->
-                        <div class="col-md">
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/DjPGoGmO5VY"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
+            <div class="row">
+                <div class="bg-white p-4 col-10 mx-auto mx-md-0 col-lg-6">
+                    <h1>I am so happy</h1>
+                    <p class="mb-4">A wonderful serenity has taken possession of my entire soul, like these sweet
+                        mornings of spring which I enjoy with my whole heart. I am alone.</p>
+                    <form class="form-inline d-flex justify-content-center">
+                        <div class="input-group"> <input type="email" class="form-control" placeholder="Your email"
+                                   id="form6">
+                            <div class="input-group-append"> <button class="btn btn-primary"
+                                        type="button">Subscribe</button> </div>
                         </div>
-                        <!-- end of the column -->
-                        <!-- begining of the column -->
-                        <div class="col-md">
-                            <h2 class="text-center">Exercice</h2>
-                            <p>Now that you have created your website and/or your game, you can upload it on the cloud
-                                to make sure everybody can sees it so you can start showing off.</p>
-
-                        </div>
-                        <!-- end of the column -->
-                    </div>
-                    <!-- End of the row -->
+                    </form>
                 </div>
             </div>
-            <!-- End of the card -->
         </div>
-        <!-- End of the container -->
-    </section>
-    <!-- End of section upload-->
-
-    <!-- ################################################################## -->
-
-    <!-- Begining of the footer -->
-    <footer class="bg-dark text-center p-5 text-white">
-        &copy; Yakademi
-    </footer>
-    <!-- End of the footer -->
+    </div>
+    <div class="py-5 text-white"
+         style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(images/cover-bubble-dark.svg);  background-position: center center, center center;  background-size: cover, cover;  background-repeat: repeat, repeat;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center align-self-center p-4">
+                    <p class="mb-5"> <strong>Pingendo Inc.</strong> <br>795 Folsom Ave, Suite 600 <br>San Francisco, CA
+                        94107 <br> <abbr title="Phone">P:</abbr> (123) 456-7890 </p>
+                    <div class="row">
+                        <div class="col-md-12 d-flex align-items-center justify-content-around"> <a href="#">
+                                <i class="d-block fa fa-facebook-official text-light fa-lg mx-2"></i>
+                            </a> <a href="#">
+                                <i class="d-block fa fa-instagram text-light fa-lg mx-2"></i>
+                            </a> <a href="#">
+                                <i class="d-block fa fa-google-plus-official text-light fa-lg mx-2"></i>
+                            </a> <a href="#">
+                                <i class="d-block fa fa-pinterest-p text-light fa-lg mx-2"></i>
+                            </a> <a href="#">
+                                <i class="d-block fa fa-reddit text-light fa-lg mx-2"></i>
+                            </a> <a href="#">
+                                <i class="d-block fa fa-twitter text-light fa-lg ml-2"></i>
+                            </a> </div>
+                    </div>
+                </div>
+                <div class="col-md-6 p-0"> <iframe width="100%" height="350"
+                            src="https://maps.google.com/maps?hl=en&amp;q=New%20York&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+                            scrolling="no" frameborder="0"></iframe></div>
+            </div>
+        </div>
+    </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
