@@ -1,25 +1,3 @@
-html {
-    scroll-behavior: smooth;
-}
-
-#header-section {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(../images/cover-bubble-dark.svg);
-    background-position: center center, center center;
-    background-size: cover, cover;
-    background-repeat: repeat, repeat;
-}
-
-#parallax-section {
-    background-image: url(../images/cover-bubble-dark.svg);
-    background-position: right bottom;
-    background-size: cover;
-    background-repeat: repeat;
-    background-attachment: fixed;
-}
-
-#footer-section {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(../images/cover-bubble-dark.svg);
-    background-position: center center, center center;
-    background-size: cover, cover;
-    background-repeat: repeat, repeat;
+canvas {
+    background: #eee;
 }
